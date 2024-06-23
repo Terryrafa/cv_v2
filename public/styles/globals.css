@@ -1,0 +1,459 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body */
+body {
+  @apply p-0 m-0 max-h-screen overflow-x-hidden bg-white scroll-p-20
+}
+
+
+/* navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%; 
+  padding: 1rem;
+  color: #141414; 
+  background-color: white; 
+  position: fixed;
+  z-index: 10; 
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.navitem {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding: 0.5rem; 
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  color: #141414;
+}
+
+.navitem:hover {
+  color: #EAD7C3;
+  background-color: rgb(66, 66, 66);
+}
+
+.Mbnav {
+  margin-right: 2rem;
+  display: none;
+  display: flex;
+}
+
+.textbig {
+  font-size: 3rem;
+  line-height: 1;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  margin-left: 2rem;
+}
+
+/* assets */
+.HeroImage {
+  border-radius: 1rem;
+  margin-left: 4rem;
+  margin-top: 16rem;
+}
+.AbtImage {
+  border-radius: 1rem;
+}
+.background {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  object-fit: cover;
+}
+
+
+/* main page */
+.maintt {
+  color: white;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Lora', serif;
+  font-size: 5rem;
+  font-weight: 500;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 28rem;
+  line-height: 1;
+}
+
+.ctcbut{
+  background-color: white;
+}
+
+.ctcbut:hover {
+  background-color: rgb(66, 66, 66);
+  color: #EAD7C3;
+}
+
+.subtt {
+  color: white;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 28rem;
+}
+
+.text {
+  position: relative;
+  margin-top: 18rem;
+}
+
+
+/* about */
+.container {
+  margin-top: 10rem;
+}
+
+.containerv2 {
+  margin-top: 6rem;
+}
+
+.but {
+  margin-left: 17.4rem;
+  margin-top: 2rem;
+}
+
+.abouttxt {
+  font-size: 2rem;
+  color: rgb(66, 66, 66);
+  justify-content: center;
+}
+.abouttlt {
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+  font-size: 2rem;
+}
+
+.txtex {
+  color: rgb(66, 66, 66);
+  margin-top: -0.5rem;
+  margin-left: 10rem;
+  position: absolute;
+}
+
+.albex {
+  color: rgb(66, 66, 66);
+  margin-top: -0.5rem;
+  margin-left: 8rem;
+  position: absolute;
+}
+
+.desc {
+  font-size: 1.2rem;
+  padding-right: 4rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Exp */
+.Exptxt {
+  font-size: 2rem;
+  color: rgb(66, 66, 66);
+  justify-content: center;
+}
+
+.txtox {
+  margin-top: -0.5rem;
+  margin-left: 12rem;
+  position: absolute;
+}
+/* exp tech */
+:root {
+  --htmli:85%;
+  --cssi:88%;
+  --javasi:26%;
+  --phpi:20%;
+  --cppi:20%;
+  --rjsi:87%;
+  --njsi:90%;
+  --twi:90%;
+  --tpi:65%;
+
+  --htmlcrl:orange;
+  --csscrl:rgb(37, 37, 255);
+  --javascrl:rgb(245, 245, 0);
+  --phpcrl:purple;
+  --cppcrl:rgb(1, 1, 202);
+  --rjscrl:rgb(0, 225, 225);
+  --njscrl:rgb(69, 69, 69);
+  --twcrl:rgb(104, 217, 255);
+  --tpcrl:rgb(28, 107, 255);
+}
+
+.containerbox {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.expbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exptext {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.expbox {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+.expgal {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.expcolm {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.expcolm .boxgal {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.boxgal {
+  width: 100%;
+}
+
+.expgal .boxgal {
+  /* position: relative; */
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+}
+
+
+.expbox .box {
+  position: relative;
+  padding: 40px 0;
+  width: 240px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.expbox .box .html {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(from 0deg,var(--htmlcrl) 0%,var(--htmlcrl) 0% var(--htmli), #f5f5f5 var(--htmli), #f5f5f5 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.css {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(from 0deg,var(--csscrl) 0%,var(--csscrl) 0% var(--cssi), #f5f5f5 var(--cssi), #f5f5f5 100%);
+  border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jvs {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(from 0deg,var(--javascrl) 0%,var(--javascrl) 0% var(--javasi), #f5f5f5 var(--javasi), #f5f5f5 100%);
+  border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.php {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(from 0deg,var(--phpcrl) 0%,var(--phpcrl) 0% var(--phpi), #f5f5f5 var(--phpi), #f5f5f5 100%);
+  border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cpp {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(from 0deg,var(--cppcrl) 0%,var(--cppcrl) 0% var(--cppi), #f5f5f5 var(--cppi), #f5f5f5 100%);
+  border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rjs {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(from 0deg,var(--rjscrl) 0%,var(--rjscrl) 0% var(--rjsi), #f5f5f5 var(--rjsi), #f5f5f5 100%);
+  border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nj {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(from 0deg,var(--njscrl) 0%,var(--njscrl) 0% var(--njsi), #f5f5f5 var(--njsi), #f5f5f5 100%);
+  border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tw {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(from 0deg,var(--twcrl) 0%,var(--twcrl) 0% var(--twi), #f5f5f5 var(--twi), #f5f5f5 100%);
+  border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tp {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(from 0deg,var(--tpcrl) 0%,var(--tpcrl) 0% var(--tpi), #f5f5f5 var(--tpi), #f5f5f5 100%);
+  border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expbox .box .html::before, .css::before, .jvs::before,.cpp::before, .php::before, .rjs::before, .nj::before, .tw::before, .tp::before {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+}
+
+.expbox .box .pertxt {
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.expbox .box .pertxt small {
+  font-size: 0.5em;
+  font-weight: 400;
+}
+
+.expbox .box h3 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+
+/* gallery */
+.gallery {
+  width: 380px;
+  height: auto;
+  object-fit: contain;
+}
+
+.custom-shape-divider-bottom-1699371601 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1699371601 svg {
+  position: relative;
+  display: block;
+  width: calc(103% + 1.3px);
+  height: 133px;
+}
+
+.custom-shape-divider-bottom-1699371601 .shape-fill {
+  fill: #DCE0D9;
+}
+
+.eduimg {
+  width: 40%;
+  aspect-ratio: 2/1;
+  object-fit: contain;
+}
+
+.imgedu {
+  border-radius: 10px;
+}
+
+.edubut {
+  border-radius: 10px 0px 10px 10px;
+  position: absolute;
+  margin-top: 21rem;
+  margin-left: 30rem;
+}
+
+.cardsd {
+  border-radius: 20px;
+}
+
+.sdimage {
+  padding-top: 1rem;
+  height: auto;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
